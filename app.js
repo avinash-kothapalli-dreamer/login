@@ -7,11 +7,12 @@ app.use(cors())
 const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
 const JWT_SECRET = "1234rfgfd"
-const mongoUrl = "mongodb+srv://Varnash:Varnash@cluster0.yjxr0aq.mongodb.net/?retryWrites=true&w=majority";
+const mongoUrl = "mongodb+srv://Avinash:avinash@cluster0.h5pqcqq.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(mongoUrl,{
 }).then(()=>{
     console.log("connected")
 }).catch((e)=>{
+    console.log("hii");
     console.log(e);
 })
 
